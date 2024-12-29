@@ -1,15 +1,14 @@
 <?php 
 class Stagire 
 {
-  private $id;
+  private   $id;
   private $nom;
   private $prenom;	
   private $age;
   private $login;	
   private $password;
 
-
-
+  
   public function getId(){
     $this->id;
   }
@@ -38,7 +37,7 @@ class Stagire
     $this->prenom=$prenom;
   }
   public function setAge($age){
-    $this->age;
+    $this->age=$age;
   }
   public function setLogin($login){
     $this->login=$login;
@@ -47,6 +46,10 @@ class Stagire
     $this->password=$password;
   }
   
+
+
+
+ 
   
 
 }
