@@ -23,10 +23,28 @@ class Stagire
     $this->age;
   }
   public function getLogin(){
-    $this->nom;
+    $this->login;
   }
   public function getPassword(){
-    $this->nom;
+    $this->password;
+  }
+  public function setId($id){
+    $this->id=$id;
+  }
+  public function setNom($nom){
+    $this->nom=$nom;
+  }
+  public function setPrenom($prenom){
+    $this->prenom=$prenom;
+  }
+  public function setAge($age){
+    $this->age;
+  }
+  public function setLogin($login){
+    $this->login=$login;
+  }
+  public function setPassword($password){
+    $this->password=$password;
   }
   
   
