@@ -27,11 +27,9 @@ class Stagire
   public function getPassword(){
     $this->password;
   }
-  public function setId($id){
-    $this->id=$id;
-  }
-  public function setNom($nom){
-    $this->nom=$nom;
+
+  public function setNom($nooom){
+    $this->nom=$nooom;
   }
   public function setPrenom($prenom){
     $this->prenom=$prenom;
@@ -48,7 +46,15 @@ class Stagire
 
   public function creat()
 {
-    var_dump($this->database());
+  $sqlStart=$this->database()-> prepare(" INSERT into stagiaire VALUES(NULL,?,?,?,?,?)");
+  return $sqlStart->execute([
+    $this->nom,
+    $this->prenom,
+    $this->age,
+    $this->login,
+    $this->password
+  ]) ;                                 
+ 
 }
    
 

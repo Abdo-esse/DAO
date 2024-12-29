@@ -9,3 +9,4 @@ CREATE Table stagiaire(
     login VARCHAR(50),
     password VARCHAR(59)
 );
+INSERT into stagiaire VALUES(NULL,?,?,?,?,?)
