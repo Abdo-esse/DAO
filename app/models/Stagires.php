@@ -45,11 +45,23 @@ class Stagire
   public function setPassword($password){
     $this->password=$password;
   }
-  
 
+  public function creat()
+{
+    var_dump($this->database());
+}
+   
 
 
  
+
+  public function database()
+  {
+    return new PDO('mysql:host=localhost;dbname=offpt', "root", "");
+
+  }
+
+
   
 
 }

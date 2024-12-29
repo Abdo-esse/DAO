@@ -9,7 +9,7 @@ $stagire->setPrenom("essemlali");
 $stagire->setAge(12);
 $stagire->setLogin('abdo');
 $stagire->setPassword(19062);
-
+$stagire->creat();
 print_r($stagire);
 
 echo "<pre>";
